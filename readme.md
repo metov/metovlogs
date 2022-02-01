@@ -34,5 +34,5 @@ pip install metovlogs
 ## Further reading
 
 * [Background](doc/background.md)
-* [Contribution guidelines](contributing.md)
+* [Contribution guidelines](doc/contributing.md)
 * [Planned future work](doc/todo.md)
