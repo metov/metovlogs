@@ -1,0 +1,7 @@
+# Hook spec for use with https://github.com/metov/yaghm
+pre-commit:
+  - enable: black --check .
+    install: pip install black
+  - enable: protect_branch master
+    install: pip install metovhooks
+  - require_version_bump master setup.py
