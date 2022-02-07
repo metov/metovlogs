@@ -23,7 +23,7 @@ log.debug("About to start doing other stuff")
 # Do some other stuff
 ```
 
-metovlogs is like [black](https://github.com/psf/black) for logs: You get reasonable behavior by default and no customization beyond that. This allows you to focus on developing without distraction. If you want to tweak your logs, you should use something else.
+metovlogs is like [black](https://github.com/psf/black) for logs: You get reasonable behavior by default and [minimal customization](doc/tweaks.md). This allows you to focus on developing without distraction. If you want to customize your logs more, you should use something else.
 
 ## Installation
 
