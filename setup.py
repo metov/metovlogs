@@ -7,7 +7,7 @@ setup(
     version="0.1.2",
     description="Dead simple Python logging.",
     url="https://github.com/metov/metovlogs",
-    long_description=Path("readme.md").read_text(),
+    long_description=Path("README.md").read_text(),
     long_description_content_type="text/markdown",
     author="Azat Akhmetov",
     author_email="azatinfo@yandex.com",
