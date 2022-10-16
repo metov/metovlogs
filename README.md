@@ -2,7 +2,7 @@
 
 > Dead simple Python logging.
 
-metovlogs is a very simple logging library. Setup is one line, then you can use it as a drop-in `print` replacement. Sane and useful log format out of the box. Best for small or early projects.
+metovlogs is a very simple logging library. Setup is one line, then you can use it as a drop-in `print` replacement. Sane and useful log format out of the box. Best for small or early stage projects.
 
 ## Usage
 Initialize the logger by calling `get_log`:
