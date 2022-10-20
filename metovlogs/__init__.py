@@ -4,7 +4,7 @@ import coloredlogs
 from . import lib
 
 
-def get_log(name: str) -> logging.Logger:
+def get_log(name: str, default_level: str = None) -> logging.Logger:
     log = logging.getLogger(name)
     fields = [
         "{name}:{lineno}",
@@ -14,7 +14,7 @@ def get_log(name: str) -> logging.Logger:
     coloredlogs.install(
         fmt=" ".join(fields),
         style="{",
-        level=lib.level_from_envar(),
+        level=default_level or lib.level_from_envar(),
         logger=log,
     )
     return log
