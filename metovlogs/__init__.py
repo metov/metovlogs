@@ -17,4 +17,12 @@ def get_log(name: str, default_level: str = None) -> logging.Logger:
         level=default_level or lib.level_from_envar(),
         logger=log,
     )
+
     return log
+
+
+_log = get_log(__name__)
+_log.info(
+    f"To change log levels, set the environment variable LOG_LEVEL to one of: "
+    + ", ".join(coloredlogs.find_defined_levels())
+)
