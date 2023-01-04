@@ -1,4 +1,6 @@
 import logging
+import os
+
 import coloredlogs
 
 from . import lib
@@ -21,8 +23,9 @@ def get_log(name: str, default_level: str = None) -> logging.Logger:
     return log
 
 
-_log = get_log(__name__)
-_log.info(
-    f"To change log levels, set the environment variable LOG_LEVEL to one of: "
-    + ", ".join(coloredlogs.find_defined_levels())
-)
+if lib.LOG_LEVEL_ENVAR_NAME not in os.environ:
+    _log = get_log(__name__)
+    _log.info(
+        f"To change log levels, set the environment variable LOG_LEVEL to one of: "
+        + ", ".join(coloredlogs.find_defined_levels())
+    )

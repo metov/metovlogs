@@ -1,10 +1,10 @@
 from pathlib import Path
 
-from setuptools import setup, find_packages
+from setuptools import find_packages, setup
 
 setup(
     name="metovlogs",
-    version="0.1.5",
+    version="0.1.6",
     description="Dead simple Python logging.",
     url="https://github.com/metov/metovlogs",
     long_description=Path("README.md").read_text(),

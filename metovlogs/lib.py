@@ -1,7 +1,6 @@
-import coloredlogs
-
 import os
 
+import coloredlogs
 
 DEFAULT_LEVEL = "DEBUG"
 LOG_LEVEL_ENVAR_NAME = "LOG_LEVEL"
