@@ -4,7 +4,7 @@ from setuptools import find_packages, setup
 
 setup(
     name="metovlogs",
-    version="0.1.6",
+    version="0.1.7",
     description="Dead simple Python logging.",
     url="https://github.com/metov/metovlogs",
     long_description=Path("README.md").read_text(),

@@ -6,7 +6,7 @@ import coloredlogs
 from . import lib
 
 
-def get_log(name: str, default_level: str = None) -> logging.Logger:
+def get_log(name: str, default_level="") -> logging.Logger:
     log = logging.getLogger(name)
     fields = [
         "{name}:{lineno}",
